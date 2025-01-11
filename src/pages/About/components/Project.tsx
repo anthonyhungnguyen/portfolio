@@ -56,12 +56,13 @@ function Project() {
             </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 {data.map((project, index) => (
+                    // Update the project card container
                     <a
                         key={index}
                         href={project.link}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='group relative overflow-hidden rounded-lg border border-zinc-800 bg-zinc-900/50 transition-colors hover:border-zinc-700'
+                        className='group relative overflow-hidden rounded-lg border border-zinc-800 bg-zinc-900/50 transition-all duration-300 hover:scale-[1.02] hover:border-zinc-700'
                     >
                         <div className='aspect-video overflow-hidden'>
                             <img

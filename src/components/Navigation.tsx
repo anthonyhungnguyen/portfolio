@@ -6,6 +6,12 @@ function Navigation() {
     // const [isDark, setIsDark] = useState(false)
     const location = useLocation()
     const isHome = location.pathname === '/'
+    const getGreeting = () => {
+        const hour = new Date().getHours()
+        if (hour < 12) return 'Good morning'
+        if (hour < 18) return 'Good afternoon'
+        return 'Good evening'
+    }
 
     return (
         <div className='flex flex-col sm:flex-row items-center justify-between gap-4 w-full max-w-4xl p-4'>
@@ -20,6 +26,9 @@ function Navigation() {
                         CN
                     </AvatarFallback>
                 </Avatar>
+                <span className='text-zinc-400 hidden sm:block'>
+                    {getGreeting()}
+                </span>
             </div>
             <nav className='flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/50 p-1 backdrop-blur-sm'>
                 <Button
@@ -45,18 +54,6 @@ function Navigation() {
                     <Link to='/blogs'>Blogs</Link>
                 </Button>
             </nav>
-            {/* <Button
-                variant='ghost'
-                size='icon'
-                className='text-zinc-400 hover:text-white rounded-full'
-                onClick={() => setIsDark(!isDark)}
-            >
-                {isDark ? (
-                    <Sun className='h-5 w-5' />
-                ) : (
-                    <Moon className='h-5 w-5' />
-                )}
-            </Button> */}
         </div>
     )
 }
