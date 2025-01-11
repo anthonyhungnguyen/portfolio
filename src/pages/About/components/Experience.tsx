@@ -71,7 +71,7 @@ function Experience() {
             <h1 className='text-4xl font-bold mb-8 text-white text-left bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent'>
                 Experience
             </h1>
-            <div className='grid grid-cols-4 gap-x-8 gap-y-12 text-left'>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-12 text-left'>
                 {data.map((item, index) => (
                     <React.Fragment key={index}>
                         <div className='text-zinc-500 text-sm tracking-wider font-medium'>

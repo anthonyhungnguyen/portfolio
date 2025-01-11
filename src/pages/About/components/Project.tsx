@@ -54,7 +54,7 @@ function Project() {
             <h1 className='text-4xl font-bold mb-8 text-white text-left bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent'>
                 Projects
             </h1>
-            <div className='grid grid-cols-2 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 {data.map((project, index) => (
                     <a
                         key={index}

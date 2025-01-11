@@ -4,7 +4,7 @@ function AboutMe() {
             <h1 className='text-4xl font-bold mb-8 text-white text-left bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent'>
                 About Me
             </h1>
-            <div className='grid grid-cols-2 gap-12'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
                 <div className='prose prose-invert max-w-none text-zinc-400 text-left space-y-6'>
                     <p className='text-sm leading-relaxed'>
                         I'm Phuc Hung Nguyen, a software and data engineer based

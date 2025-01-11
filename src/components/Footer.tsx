@@ -4,7 +4,7 @@ import dayjs from 'dayjs'
 
 function Footer() {
     return (
-        <footer className='max-w-4xl w-full p-8 flex items-center justify-between border-t border-zinc-800'>
+        <footer className='max-w-4xl w-full p-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-zinc-800'>
             <div className='text-sm text-zinc-400'>
                 © {dayjs().year()} Phuc Hung Nguyen. All rights reserved.
             </div>

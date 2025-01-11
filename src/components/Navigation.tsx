@@ -8,7 +8,7 @@ function Navigation() {
     const isHome = location.pathname === '/'
 
     return (
-        <div className='flex items-center justify-between gap-4 w-full max-w-4xl p-4'>
+        <div className='flex flex-col sm:flex-row items-center justify-between gap-4 w-full max-w-4xl p-4'>
             <div className='flex items-center gap-4'>
                 <Avatar className='h-12 w-12 border border-zinc-800'>
                     <AvatarImage
