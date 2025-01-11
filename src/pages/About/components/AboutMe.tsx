@@ -1,5 +1,3 @@
-import React from 'react'
-
 function AboutMe() {
     return (
         <div className='max-w-4xl w-full p-8 rounded-xl backdrop-blur-sm  border-zinc-800'>

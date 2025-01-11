@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
-import { Moon, Sun } from 'lucide-react'
 
 function Navigation() {
     // const [isDark, setIsDark] = useState(false)

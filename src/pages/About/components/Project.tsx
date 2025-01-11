@@ -1,5 +1,3 @@
-import React from 'react'
-
 type ProjectProps = {
     name: string
     link: string
