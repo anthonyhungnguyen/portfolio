@@ -32,7 +32,7 @@ function AboutMe() {
                 </div>
                 <div className='rounded-xl p-4 ring-zinc-700/50 overflow-hidden'>
                     <img
-                        src='/src/assets/images/me.JPG'
+                        src='/images/me.JPG'
                         alt='Profile'
                         className='w-full h-full object-cover rounded-lg transition-transform duration-100'
                     />

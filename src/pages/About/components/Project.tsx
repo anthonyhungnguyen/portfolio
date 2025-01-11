@@ -11,7 +11,7 @@ function Project() {
         {
             name: 'Food Price Tracker',
             link: 'https://github.com/anthonyhungnguyen/applied-computing-concepts',
-            image: '/src/assets/images/projects/foodpricetracker.png',
+            image: '/images/projects/foodpricetracker.png',
             achievement:
                 'Created "Windsor Food Price Tracker," a React.js and Spring Boot application that tracks 1000+ products across 5 stores, helping users find the lowest food prices and save 10-20% on groceries.',
             skill: ['React', 'Spring Boot', 'Docker', 'Scrapy', 'MySQL'],
@@ -19,7 +19,7 @@ function Project() {
         {
             name: 'Bus Radar',
             link: 'https://github.com/anthonyhungnguyen/bus_radar',
-            image: '/src/assets/images/projects/bus_radar.jpeg',
+            image: '/images/projects/bus_radar.jpeg',
             achievement:
                 'Developed BusRadar (Java, ReactJS, Docker), a real-time bus tracking platform achieving 95% accuracy in arrival time predictions, enhancing commuter satisfaction.',
             skill: [
@@ -34,7 +34,7 @@ function Project() {
         {
             name: 'Biometric-based Attendance Tracking System with One/Fewshot Learning',
             link: 'https://github.com/anthonyhungnguyen/capstone-project',
-            image: '/src/assets/images/projects/biometric.png',
+            image: '/images/projects/biometric.png',
             achievement:
                 'Engineered a scalable backend using Spring Boot for an AI-powered student authentication system, integrating facial recognition capabilities with Python, TensorFlow, and OpenCV. This solution improved attendance tracking efficiency by 40% and provided real-time data for informed policy decisions.',
             skill: [

@@ -12,7 +12,7 @@ function Navigation() {
             <div className='flex items-center gap-4'>
                 <Avatar className='h-12 w-12 border border-zinc-800'>
                     <AvatarImage
-                        src='/src/assets/images/avatar.jpg'
+                        src='/images/avatar.jpg'
                         alt='Profile'
                         className='object-cover object-center'
                     />
