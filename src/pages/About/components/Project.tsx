@@ -9,6 +9,22 @@ type ProjectProps = {
 function Project() {
     const data = [
         {
+            name: 'Text2Diagram',
+            link: 'https://github.com/anthonyhungnguyen/Text2Diagram',
+            image: '/images/projects/text2diagram.png',
+            achievement:
+                'Created "Text2Diagram," a React.js and Spring Boot application that converts text-based UML diagrams into visual diagrams, saving developers 50% of time spent on manual diagram creation. Deployed on AWS ECS and Amplify with CI/CD pipeline.',
+            skill: [
+                'React',
+                'Spring Boot',
+                'Docker',
+                'AWS',
+                'AWS Amplify',
+                'AWS ECS',
+                'AWS Load Balancer',
+            ],
+        },
+        {
             name: 'Food Price Tracker',
             link: 'https://github.com/anthonyhungnguyen/applied-computing-concepts',
             image: '/images/projects/foodpricetracker.png',
@@ -68,7 +84,7 @@ function Project() {
                             <img
                                 src={project.image}
                                 alt={project.name}
-                                className='object-cover w-full h-full transition-transform duration-300 group-hover:scale-105'
+                                className='object-fit w-full h-full transition-transform duration-300 group-hover:scale-105'
                             />
                         </div>
                         <div className='p-6 space-y-4'>
