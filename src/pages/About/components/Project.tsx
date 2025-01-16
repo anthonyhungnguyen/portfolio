@@ -13,10 +13,10 @@ function Project() {
             link: 'https://github.com/anthonyhungnguyen/Text2Diagram',
             image: '/images/projects/text2diagram.png',
             achievement:
-                'Created "Text2Diagram," a React.js and Spring Boot application that converts text-based UML diagrams into visual diagrams, saving developers 50% of time spent on manual diagram creation. Deployed on AWS ECS and Amplify with CI/CD pipeline.',
+                'Created "Text2Diagram," a React.js and FastAPI application that converts text-based UML diagrams into visual diagrams, saving developers 50% of time spent on manual diagram creation. Deployed on AWS ECS and Amplify with CI/CD pipeline.',
             skill: [
                 'React',
-                'Spring Boot',
+                'FastAPI',
                 'Docker',
                 'AWS',
                 'AWS Amplify',
