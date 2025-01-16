@@ -13,7 +13,7 @@ function Project() {
             link: 'https://github.com/anthonyhungnguyen/Text2Diagram',
             image: '/images/projects/text2diagram.png',
             achievement:
-                'Created "Text2Diagram," a React.js and FastAPI application that converts text-based UML diagrams into visual diagrams, saving developers 50% of time spent on manual diagram creation. Deployed on AWS ECS and Amplify with CI/CD pipeline.',
+                'Developed Text2Diagram, a React.js/FastAPI application that automates diagram generation from text, improving developer productivity by 50% in diagram creation tasks. Deployed using AWS ECS (backend) and Amplify (frontend) with a CI/CD pipeline.',
             skill: [
                 'React',
                 'FastAPI',
