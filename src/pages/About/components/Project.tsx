@@ -1,77 +1,13 @@
-type ProjectProps = {
-    name: string
-    link: string
-    image: string
-    achievement: string
-    skill: string[]
-}
+import { projectData } from '@/data/about'
 
 function Project() {
-    const data = [
-        {
-            name: 'Text2Diagram',
-            link: 'https://github.com/anthonyhungnguyen/Text2Diagram',
-            image: '/images/projects/text2diagram.png',
-            achievement:
-                'Developed Text2Diagram, a React.js/FastAPI application that automates diagram generation from text, improving developer productivity by 50% in diagram creation tasks. Deployed using AWS ECS (backend) and Amplify (frontend) with a CI/CD pipeline.',
-            skill: [
-                'React',
-                'FastAPI',
-                'Docker',
-                'AWS',
-                'AWS Amplify',
-                'AWS ECS',
-                'AWS Load Balancer',
-            ],
-        },
-        {
-            name: 'Food Price Tracker',
-            link: 'https://github.com/anthonyhungnguyen/applied-computing-concepts',
-            image: '/images/projects/foodpricetracker.png',
-            achievement:
-                'Created "Windsor Food Price Tracker," a React.js and Spring Boot application that tracks 1000+ products across 5 stores, helping users find the lowest food prices and save 10-20% on groceries.',
-            skill: ['React', 'Spring Boot', 'Docker', 'Scrapy', 'MySQL'],
-        },
-        {
-            name: 'Bus Radar',
-            link: 'https://github.com/anthonyhungnguyen/bus_radar',
-            image: '/images/projects/bus_radar.jpeg',
-            achievement:
-                'Developed BusRadar (Java, ReactJS, Docker), a real-time bus tracking platform achieving 95% accuracy in arrival time predictions, enhancing commuter satisfaction.',
-            skill: [
-                'React',
-                'Spring Boot',
-                'Docker',
-                'Mongodb',
-                'MySQL',
-                'Redis',
-            ],
-        },
-        {
-            name: 'Biometric-based Attendance Tracking System with One/Fewshot Learning',
-            link: 'https://github.com/anthonyhungnguyen/capstone-project',
-            image: '/images/projects/biometric.png',
-            achievement:
-                'Engineered a scalable backend using Spring Boot for an AI-powered student authentication system, integrating facial recognition capabilities with Python, TensorFlow, and OpenCV. This solution improved attendance tracking efficiency by 40% and provided real-time data for informed policy decisions.',
-            skill: [
-                'Spring Boot',
-                'Python',
-                'TensorFlow',
-                'OpenCV',
-                'MySQL',
-                'React',
-                'Kafka',
-            ],
-        },
-    ] as ProjectProps[]
-
     return (
         <div className='max-w-4xl w-full p-8 rounded-xl backdrop-blur-sm border-zinc-800'>
             <h1 className='text-4xl font-bold mb-8 text-white text-left bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent'>
                 Projects
             </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-                {data.map((project, index) => (
+                {projectData.map((project, index) => (
                     // Update the project card container
                     <a
                         key={index}
