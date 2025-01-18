@@ -2,6 +2,7 @@ import { BlogType } from '@/types/blog'
 import { useEffect, useState } from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkToc from 'remark-toc'
 import axios from 'axios'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
@@ -17,7 +18,7 @@ function BlogDetails({ blogData }: { blogData: BlogType }) {
     return (
         <Markdown
             className='prose prose-invert max-w-none prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-800 prose-headings:text-zinc-100 prose-p:text-zinc-300 prose-a:text-blue-400 prose-strong:text-zinc-200 prose-code:text-zinc-200 prose-ul:text-zinc-300 prose-li:marker:text-zinc-500'
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[[remarkGfm], [remarkToc, { tight: true }]]}
             components={{
                 code(props) {
                     const { children, className, node, ...rest } = props

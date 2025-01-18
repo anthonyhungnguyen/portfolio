@@ -44,14 +44,17 @@ function Navigation() {
                 </Button>
                 <Button
                     variant='ghost'
-                    className={`rounded-full transition-colors ${
+                    className={`rounded-full transition-colors relative ${
                         !isHome
                             ? 'text-white bg-zinc-800/50'
                             : 'text-zinc-400 hover:text-white hover:bg-zinc-800/50'
                     }`}
                     asChild
                 >
-                    <Link to='/blogs'>Blogs</Link>
+                    <Link to='/blogs'>
+                        Blogs
+                        <span className='absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full' />
+                    </Link>
                 </Button>
             </nav>
         </div>

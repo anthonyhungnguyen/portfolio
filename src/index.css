@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background-color: #18181b; /* zinc-900 */
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 .gradient-animate {
-    background: linear-gradient(45deg, #000000, #1a1a1a);
+    background: linear-gradient(45deg, #18181b, #27272a); /* zinc-900 to zinc-800 */
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
