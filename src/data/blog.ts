@@ -7,7 +7,7 @@ const blogData = [
         path: '/blogs/async-await-python',
         summary:
             'Learn how to write asynchronous code in Python using async/await syntax, and how it compares to synchronous code.',
-        content: '/src/data/markdown/asyncawait.md',
+        content: '/blogs/markdown/asyncawait.md',
     },
 ] as BlogType[]
 
