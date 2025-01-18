@@ -12,22 +12,20 @@ function App() {
     return (
         <BrowserRouter>
             <MouseEffect />
-            <div className='container mx-auto flex justify-center gap-8 pt-8 min-h-screen'>
-                <div className='flex-1 max-w-4xl flex flex-col items-center gap-8'>
-                    <Navigation />
-                    <Routes>
-                        <Route path='/' element={<About />} />
-                        <Route path='/blogs' element={<Blogs />} />
-                        {blogData.map((blog, index) => (
-                            <Route
-                                key={index}
-                                path={blog.path}
-                                element={<Content blogData={blog} />}
-                            />
-                        ))}
-                    </Routes>
-                    <Footer />
-                </div>
+            <div className='container mx-auto flex justify-center gap-8 pt-8 min-h-[70vh] flex-col items-center'>
+                <Navigation />
+                <Routes>
+                    <Route path='/' element={<About />} />
+                    <Route path='/blogs' element={<Blogs />} />
+                    {blogData.map((blog, index) => (
+                        <Route
+                            key={index}
+                            path={blog.path}
+                            element={<Content blogData={blog} />}
+                        />
+                    ))}
+                </Routes>
+                <Footer />
                 <BackTop />
             </div>
         </BrowserRouter>

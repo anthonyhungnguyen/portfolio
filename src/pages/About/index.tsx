@@ -19,7 +19,7 @@ function About() {
     })
 
     return (
-        <div>
+        <>
             <section
                 ref={aboutRef}
                 className={`relative transition-all duration-700 ${
@@ -70,7 +70,7 @@ function About() {
             >
                 <Skills />
             </section>
-        </div>
+        </>
     )
 }
 
