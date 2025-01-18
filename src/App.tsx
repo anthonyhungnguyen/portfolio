@@ -6,7 +6,7 @@ import Blogs from '@/pages/Blogs'
 import Footer from '@/components/Footer'
 import BackTop from '@/components/BackTop'
 import MouseEffect from '@/components/MouseEffect'
-import BlogDetails from './pages/Blogs/components/BlogDetails'
+import Content from './pages/Blogs/components/Content'
 
 function App() {
     return (
@@ -22,7 +22,7 @@ function App() {
                             <Route
                                 key={index}
                                 path={blog.path}
-                                element={<BlogDetails blogData={blog} />}
+                                element={<Content blogData={blog} />}
                             />
                         ))}
                     </Routes>

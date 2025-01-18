@@ -1,8 +1,7 @@
 type BlogType = {
+    date: string
     title: string
-    image: string
     path: string
-    summary: string
     content: string
 }
 
