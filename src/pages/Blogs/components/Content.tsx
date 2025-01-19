@@ -16,9 +16,9 @@ function Content({ blogData }: { blogData: BlogType }) {
     }, [blogData.content])
 
     return (
-        <div className='max-w-full overflow-x-auto px-8'>
+        <div className='max-w-full md:max-w-4xl overflow-x-auto px-8 mx-auto'>
             <Markdown
-                className='prose prose-invert flex flex-col max-w-full'
+                className='prose prose-invert flex flex-col'
                 remarkPlugins={[[remarkGfm], [remarkToc]]}
                 components={{
                     code(props) {
