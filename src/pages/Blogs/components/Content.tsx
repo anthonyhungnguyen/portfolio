@@ -10,13 +10,13 @@ import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 function Content({ blogData }: { blogData: BlogType }) {
     const [markdown, setMarkdown] = useState('')
     useEffect(() => {
-        axios.get(blogData.content).then((response) => {
+        axios.get(`/blogs/${blogData.name}.md`).then((response) => {
             setMarkdown(response.data)
         })
-    }, [blogData.content])
+    }, [blogData.name])
 
     return (
-        <div className='max-w-full md:max-w-4xl overflow-x-auto px-8 mx-auto'>
+        <div className='max-w-full md:max-w-4xl overflow-x-auto mx-auto p-8'>
             <Markdown
                 className='prose prose-invert flex flex-col'
                 remarkPlugins={[[remarkGfm], [remarkToc]]}

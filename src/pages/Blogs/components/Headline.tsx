@@ -2,8 +2,7 @@ import { BlogType } from '@/types/blog'
 
 function BlogOverview({ blogData }: { blogData: BlogType }) {
     return (
-        <div className='flex items-center'>
-            <span className='text-zinc-400 mr-2'>•</span>
+        <div className='flex items-center hover:bg-zinc-800 rounded-md'>
             <span className='text-sm text-zinc-500 min-w-[80px]'>
                 {blogData.date}
             </span>

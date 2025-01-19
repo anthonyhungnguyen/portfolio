@@ -1,8 +1,7 @@
 type BlogType = {
     date: string
+    name: string
     title: string
-    path: string
-    content: string
 }
 
 export type { BlogType }
