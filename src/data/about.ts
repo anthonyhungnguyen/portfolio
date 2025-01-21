@@ -12,15 +12,7 @@ const projectData = [
         image: '/images/projects/text2diagram.png',
         achievement:
             'Developed Text2Diagram, a React.js/FastAPI application that automates diagram generation from text, improving developer productivity by 50% in diagram creation tasks. Deployed using AWS ECS (backend) and Amplify (frontend) with a CI/CD pipeline.',
-        skill: [
-            'React',
-            'FastAPI',
-            'Docker',
-            'AWS',
-            'AWS Amplify',
-            'AWS ECS',
-            'AWS Load Balancer',
-        ],
+        skill: ['React', 'FastAPI', 'Docker', 'AWS'],
     },
     {
         name: 'Food Price Tracker',
@@ -60,9 +52,9 @@ const skillData = {
     'Programming Languages': ['Java', 'Python', 'JavaScript', 'TypeScript'],
     'Cloud & DevOps': ['GCP', 'Docker', 'Kubernetes'],
     Frameworks: ['React', 'Spring Boot', 'FastAPI', 'Tailwind CSS'],
-    'Testing & Monitoring': ['JUnit', 'PyTest', 'Prometheus', 'Grafana'],
+    'Testing & Monitoring': ['JUnit', 'PyTest', 'Grafana'],
     'Big Data': ['Kafka', 'PySpark', 'Airflow', 'Hadoop', 'Spark'],
-    Databases: ['Redis', 'MySQL', 'ArangoDB', 'BigQuery'],
+    Databases: ['Redis', 'MySQL', 'ArangoDB', 'BigQuery', 'Prometheus', 'Hive'],
 } as SkillProps
 
 const educationData = [
@@ -86,16 +78,15 @@ const experienceData = [
         companyName: 'Giao Hang Nhanh',
         title: 'Data Engineer',
         achievements: [
-            'Architected and implemented a big data platform, migrating from legacy systems and achieving a 30% cost reduction through optimized resource utilization.',
-            'Developed a high-throughput API service using FastAPI to process real-time parcel scan data, capable of handling thousands of requests per second.',
+            'Architected GCP-based data platform (GCS, Airflow) to replace legacy systems, reducing infrastructure costs by 30% via Spark optimization and auto-scaling policies.',
+            'Built FastAPI service with Kafka integration to process 2K+ parcel scans/sec, enabling real-time logistics tracking and reducing ETL latency by 45%.',
             'Engineered a robust Change Data Capture (CDC) pipeline using Kafka Connect and Debezium to stream data from MongoDB to a data lake, leveraging Apache Iceberg for efficient and scalable storage and management.',
-            'Achieved 95% data consistency in the data lake by designing and implementing a multi-stage data quality validation process integrated into the ingestion pipeline.',
+            'Implemented Great Expectations validation framework in Airflow pipelines, achieving 95% data consistency and eliminating 15+ hours/month of manual QA.',
         ],
         skill: [
             'Python',
             'FastAPI',
             'Kafka',
-            'Debezium',
             'MongoDB',
             'Apache Iceberg',
             'Docker',
@@ -109,15 +100,16 @@ const experienceData = [
         companyName: 'VNG Corporation',
         title: 'Software Engineer',
         achievements: [
-            'Developed a centralized data integration platform using Airflow, Spark, and JupyterHub that simplified data access and improved cross- team collaboration by creating reusable ETL pipelines, resulting in a 60% reduction in data retrieval time and an 80% increase in development efficiency.',
-            'Developed a data-driven application that significantly improved bad actor identification by integrating multiple data sources from different businesses, such as Payment, Billing, and Telco, into ArangoDB, enabling users to visualize and query complex relationships and patterns using graph traversal queries, resulting in a 50% increase in identification accuracy.',
-            'Designed and deployed a real-time machine learning service optimized for low latency and high throughput. Achieved less than 100ms latency per batch at peak load and a 70% processing speed improvement through the use of multi-worker and asynchronous processing.',
+            'Designed centralized data infrastructure using Apache Airflow, Spark, and JupyterHub, designing modular ETL pipelines that reduced data retrieval latency by 60% and accelerated team productivity by 80% via reusable templates.',
+            'Engineered ArangoDB-based integration layer unifying Payment, Billing, and Telco systems, leveraging graph traversal algorithms to boost fraudulent pattern detection accuracy by 50%.',
+            'Built async FastAPI service with horizontal scaling (Kubernetes), achieving sub 100ms latency at 10K+ RPS and 70% faster inference via model quantization and multi-worker parallel processing.',
         ],
         skill: [
             'Airflow',
             'Spark',
             'JupyterHub',
             'ArangoDB',
+            'Kubernetes',
             'Spring Boot',
             'React',
             'Docker',
@@ -129,12 +121,12 @@ const experienceData = [
     {
         timeline: 'Jul 2020 - Nov 2020',
         companyName: 'VNG Corporation',
-        title: 'Fresher',
+        title: 'Junior Software Engineer',
         achievements: [
-            'Developed a comprehensive data portal with a user-friendly frontend React and a robust backend Spring Boot, resulting in a 30% improvement in data retrieval time for internal teams.',
+            'Architected and deployed a scalable data portal using React (TypeScript) with Redux state management and Spring Boot backend featuring RESTful APIs and Hibernate ORM, resulting in 30% improvement in data retrieval time.',
         ],
         skill: ['React', 'Spring Boot', 'Docker'],
     },
 ] as ExperienceProps[]
 
-export { projectData, skillData, educationData, experienceData }
+export { educationData, experienceData, projectData, skillData }
