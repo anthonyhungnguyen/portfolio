@@ -4,7 +4,7 @@ Over the years, Airflow has been one of the tools I’ve used the most. Hours of
 
 However, this comfort made me realize that I’d drifted away from understanding its core principles and fundamentals. So, I decided it was time to revisit Airflow—one of the most popular orchestration tools in modern data engineering.
 
-# The Original Story
+## The Original Story
 Data pipelines were messy. Airbnb felt the pain, neediang to orchestrate increasingly complex workflows. In **2014**, engineer **Maxime Beauchemin** built **Airflow** to solve this: workflows as Python code (DAGs), dynamic, and monitorable.
 
 Airbnb open-sourced it in **2015**, contributing to the **Apache Software Foundation**. The community exploded. Airflow became incredibly extensible, integrating with everything.
