@@ -5,15 +5,9 @@ Over the years, Airflow has been one of the tools I’ve used the most. Hours of
 However, this comfort made me realize that I’d drifted away from understanding its core principles and fundamentals. So, I decided it was time to revisit Airflow—one of the most popular orchestration tools in modern data engineering.
 
 ## The Original Story
-Data pipelines were messy. Airbnb felt the pain, neediang to orchestrate increasingly complex workflows. In **2014**, engineer **Maxime Beauchemin** built **Airflow** to solve this: workflows as Python code (DAGs), dynamic, and monitorable.
+Data pipelines were messy. Airbnb felt the pain, needing to orchestrate increasingly complex workflows. In **2014**, engineer **Maxime Beauchemin** built **Airflow** to solve this: workflows as Python code (DAGs), dynamic, and monitorable.
 
 Airbnb open-sourced it in **2015**, contributing to the **Apache Software Foundation**. The community exploded. Airflow became incredibly extensible, integrating with everything.
-
-**Key moments:**
-
-- **2019: Apache Top-Level Project:** Solidified as a trusted, mature tool.
-- **Kubernetes Executor:** Scalability boosted by containerization.
-- **Cloud Services:** Easy adoption via managed services (AWS, Google, Azure).
 
 **Today, Airflow is the standard for data workflow orchestration.** From simple tasks to complex ML pipelines, it's used everywhere. Its success? Code-driven workflows, flexibility, and a strong community.
 
@@ -24,9 +18,7 @@ Orchestration becomes overwhelming when:
 - **Proprietary ETL Tools (Vendor Lock-in):** While some ETL tools offered scheduling, they were often **expensive, inflexible, and UI-heavy**. Customization was limited, integrations were rigid, and you were locked into a vendor's ecosystem. Code was often hidden or abstracted away, hindering transparency and control.
 - **Manual Intervention Madness:** For complex dependencies or error handling, teams often resorted to **manual intervention**. This was **error-prone, time-consuming, and completely unsustainable** as data volumes grew. "Firefighting" became the norm.
 
-Airflow design:
-
-At core, Airflow operates on the concept of Directed Acyclic Graph (DAGs) to model workflows.
+At core, Airflow operates on the concept of **Directed Acyclic Graph (DAGs)** to model workflows.
 
 ![DAGs](https://media.geeksforgeeks.org/wp-content/uploads/20231106151507/4-(1).jpg)
 - **Tasks (Nodes)** are individual units, such as running query, copying data or executing scripts
