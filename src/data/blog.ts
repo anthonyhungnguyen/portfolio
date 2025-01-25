@@ -11,6 +11,11 @@ const blogData = [
         name: 'fastapi',
         title: 'Building a REST API with FastAPI',
     },
+    {
+        date: '2025-01-24',
+        name: 'airflow',
+        title: 'Apache Airflow Overview',
+    },
 ] as BlogType[]
 
 export { blogData }
